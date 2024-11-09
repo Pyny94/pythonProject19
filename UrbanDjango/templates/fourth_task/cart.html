@@ -1,0 +1,17 @@
+{%extends "fourth_task/menu.html"%}
+
+    {% block pegename %}
+    {{block.super}}
+        <h1> Корзина </h1>
+    {% endblock %}
+
+    {% block menu %}
+    {{block.super}}
+    {% endblock %}
+
+{% block content %}
+<h3>Извините, ваша корзина пуста</h3>
+<ul>
+    <button><a href="/">На главную</a></button>
+    </ul>
+{% endblock %}
